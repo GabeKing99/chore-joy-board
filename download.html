@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chore Joy Board</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    const APP_URL = 'https://your-deployed-web-app.com';
+    const IOS_URL = 'https://apps.apple.com/app/idXXXXXXXXXX';
+    const ANDROID_URL = 'https://play.google.com/store/apps/details?id=com.example.chorejoy';
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode@1.4.4/build/qrcode.min.js"></script>
+</head>
+<body class="bg-gradient-to-b from-sky-50 via-white to-white text-slate-900 antialiased">
+  <header class="sticky top-0 z-40 bg-white/70 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center gap-3">
+      <div class="w-9 h-9 rounded-xl bg-slate-900 text-white grid place-items-center shadow-sm">🏠</div>
+      <div class="flex-1">
+        <h1 class="text-base font-semibold leading-tight">Chore Joy Board</h1>
+        <p class="text-xs text-slate-500">Make chores a game the whole house can win</p>
+      </div>
+      <nav class="hidden md:flex items-center gap-4 text-sm">
+        <a href="#features" class="hover:opacity-80">Features</a>
+        <a href="#how" class="hover:opacity-80">How it works</a>
+        <a href="#download" class="px-3 py-1.5 rounded-lg bg-slate-900 text-white hover:bg-slate-800">Download</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="hero" class="max-w-6xl mx-auto px-4 py-16 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight">Family Chore Bingo</h2>
+        <p class="mt-3 text-lg text-slate-700">Turn chores into quick wins and friendly competition. No logins. No stress. Just tap and play.</p>
+        <div class="mt-6 flex flex-wrap items-center gap-3">
+          <a href="#download" class="inline-flex items-center gap-2 px-5 py-3 rounded-2xl bg-slate-900 text-white hover:bg-slate-800 shadow">Get the app</a>
+        </div>
+      </div>
+      <div class="relative rounded-[28px] border bg-white p-4 shadow-lg">
+        <div class="rounded-2xl border bg-gradient-to-br from-white to-slate-50 p-4">
+          <div class="flex items-center justify-between mb-2">
+            <div class="text-sm font-semibold">Preview</div>
+            <div class="text-xs text-slate-500">Bingo board</div>
+          </div>
+          <div class="grid grid-cols-5 gap-1">
+            <div class="select-none aspect-square rounded-xl border text-[10px] grid place-items-center bg-white">Chore</div>
+            <div class="select-none aspect-square rounded-xl border text-[10px] grid place-items-center bg-white">Chore</div>
+            <div class="select-none aspect-square rounded-xl border text-[10px] grid place-items-center bg-white">Chore</div>
+            <div class="select-none aspect-square rounded-xl border text-[10px] grid place-items-center bg-white">Chore</div>
+            <div class="select-none aspect-square rounded-xl border text-[10px] grid place-items-center bg-white">Chore</div>
+            <div class="select-none aspect-square rounded-xl border text-[10px] grid place-items-center bg-white">Chore</div>
+            <div class="select-none aspect-square rounded-xl border text-[10px] grid place-items-center bg-white">Chore</div>
+            <div class="select-none aspect-square rounded-xl border text-[10px] grid place-items-center bg-white">Chore</div>
+            <div class="select-none aspect-square rounded-xl border text-[10px] grid place-items-center bg-white">Chore</div>
+            <div class="select-none aspect-square rounded-xl border text-[10px] grid place-items-center bg-white">Chore</div>
+            <div class="select-none aspect-square rounded-xl border text-[10px] grid place-items-center bg-white">Chore</div>
+            <div class="select-none aspect-square rounded-xl border text-[10px] grid place-items-center bg-white">Chore</div>
+            <div class="select-none aspect-square rounded-xl border text-[10px] grid place-items-center bg-emerald-50 border-emerald-200">Free</div>
+            <div class="select-none aspect-square rounded-xl border text-[10px] grid place-items-center bg-white">Chore</div>
+            <div class="select-none aspect-square rounded-xl border text-[10px] grid place-items-center bg-white">Chore</div>
+            <div class="select-none aspect-square rounded-xl border text-[10px] grid place-items-center bg-white">Chore</div>
+            <div class="select-none aspect-square rounded-xl border text-[10px] grid place-items-center bg-white">Chore</div>
+            <div class="select-none aspect-square rounded-xl border text-[10px] grid place-items-center bg-white">Chore</div>
+            <div class="select-none aspect-square rounded-xl border text-[10px] grid place-items-center bg-white">Chore</div>
+            <div class="select-none aspect-square rounded-xl border text-[10px] grid place-items-center bg-white">Chore</div>
+            <div class="select-none aspect-square rounded-xl border text-[10px] grid place-items-center bg-white">Chore</div>
+            <div class="select-none aspect-square rounded-xl border text-[10px] grid place-items-center bg-white">Chore</div>
+            <div class="select-none aspect-square rounded-xl border text-[10px] grid place-items-center bg-white">Chore</div>
+            <div class="select-none aspect-square rounded-xl border text-[10px] grid place-items-center bg-white">Chore</div>
+            <div class="select-none aspect-square rounded-xl border text-[10px] grid place-items-center bg-white">Chore</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="features" class="max-w-6xl mx-auto px-4 py-12">
+      <h2 class="text-3xl font-bold text-center mb-8">Features</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 bg-white rounded-2xl border shadow-sm">
+          <h3 class="font-semibold mb-2">Everyone plays</h3>
+          <p class="text-sm text-slate-600">Make chores a team sport with bingo boards.</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl border shadow-sm">
+          <h3 class="font-semibold mb-2">Your rules</h3>
+          <p class="text-sm text-slate-600">Pick board size and free center.</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl border shadow-sm">
+          <h3 class="font-semibold mb-2">Instant wins</h3>
+          <p class="text-sm text-slate-600">Confetti rewards and a simple leaderboard.</p>
+        </div>
+      </div>
+    </section>
+    <section id="how" class="max-w-6xl mx-auto px-4 py-12 bg-slate-50">
+      <h2 class="text-3xl font-bold text-center mb-8">How it works</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 bg-white rounded-2xl border shadow-sm">
+          <h3 class="font-semibold mb-2">1. Create your crew</h3>
+          <p class="text-sm text-slate-600">Add each household member with a unique color.</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl border shadow-sm">
+          <h3 class="font-semibold mb-2">2. Set board and chores</h3>
+          <p class="text-sm text-slate-600">Choose board size and load our default chore library or customize.</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl border shadow-sm">
+          <h3 class="font-semibold mb-2">3. Tap and play</h3>
+          <p class="text-sm text-slate-600">Complete chores, earn points and celebrate bingos together.</p>
+        </div>
+      </div>
+    </section>
+    <section id="download" class="max-w-6xl mx-auto px-4 py-12">
+      <div class="rounded-3xl border bg-white p-6 md:p-10 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+        <div class="md:col-span-2">
+          <h3 class="text-2xl font-bold">Get the app</h3>
+          <p class="mt-2">Install from your favorite store or open the web app now. Scan the code to jump in on your phone.</p>
+          <div class="mt-5 flex flex-wrap items-center gap-3">
+            <a id="ios-badge" href="#" target="_blank" rel="noreferrer" class="block">
+              <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" class="h-12" />
+            </a>
+            <a id="android-badge" href="#" target="_blank" rel="noreferrer" class="block">
+              <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" class="h-12" />
+            </a>
+            <a id="open-web-app" href="#" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl border bg-white hover:bg-slate-50">Open web app</a>
+          </div>
+        </div>
+        <div class="border rounded-2xl p-4 grid place-items-center">
+          <div id="qrcode"></div>
+          <div class="text-xs text-slate-500 mt-2">Scan to open</div>
+        </div>
+      </div>
+    </section>
+    <section id="faq" class="max-w-6xl mx-auto px-4 py-12">
+      <h2 class="text-3xl font-bold text-center mb-8">FAQ</h2>
+      <div class="space-y-6">
+        <div class="bg-white rounded-2xl border shadow-sm p-6">
+          <h3 class="font-semibold mb-2">Is this free?</h3>
+          <p class="text-sm text-slate-600">Yes! Chore Joy Board is completely free and runs entirely in your browser.</p>
+        </div>
+        <div class="bg-white rounded-2xl border shadow-sm p-6">
+          <h3 class="font-semibold mb-2">Do I need an account?</h3>
+          <p class="text-sm text-slate-600">No accounts or logins required. Everything is saved locally on your device.</p>
+        </div>
+        <div class="bg-white rounded-2xl border shadow-sm p-6">
+          <h3 class="font-semibold mb-2">Can I customize chores?</h3>
+          <p class="text-sm text-slate-600">Absolutely! You can add, remove, and edit chores in the app settings.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="border-t">
+    <div class="max-w-6xl mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+      <div class="text-sm text-slate-600">© <script>document.write(new Date().getFullYear());</script> Chore Joy Board. All rights reserved.</div>
+      <div class="text-sm text-slate-600">Questions: <a href="mailto:hello@yourdomain.com" class="underline">hello@yourdomain.com</a></div>
+      <div class="text-sm text-slate-600 md:text-right">
+        <a href="#" class="hover:underline">Privacy</a>
+        <span class="mx-2">•</span>
+        <a href="#" class="hover:underline">Terms</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('ios-badge').href = IOS_URL;
+    document.getElementById('android-badge').href = ANDROID_URL;
+    document.getElementById('open-web-app').href = APP_URL;
+    new QRCode(document.getElementById('qrcode'), {
+      text: APP_URL,
+      width: 220,
+      height: 220,
+      colorDark : "#000000",
+      colorLight : "#ffffff",
+      correctLevel : QRCode.CorrectLevel.H
+    });
+  </script>
+</body>
+</html>
