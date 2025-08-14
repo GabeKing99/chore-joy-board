@@ -1,0 +1,9 @@
+{
+  "name": "Chore Joy Board",
+  "short_name": "Chore Bingo",
+  "start_url": "/chore-joy-board/",
+  "scope": "/chore-joy-board/",
+  "display": "standalone",
+  "background_color": "#f3f4f6",
+  "theme_color": "#334155"
+}
