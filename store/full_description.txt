@@ -1,0 +1,12 @@
+Chore Joy Board transforms household chores into an engaging game for families. Create custom bingo boards for every member of your household, assign chores with different difficulty levels, and let everyone earn points as they complete tasks. The app tracks progress, bingos, and weekly resets automatically.
+
+Key features include:
+
+- Customizable bingo boards with easy, medium, and hard chores
+- Multi-player support for the whole household
+- Real-time leaderboard with points and bingos
+- Weekly progress tracking and history
+- Offline-first: your data stays on your device
+- Share boards with family using QR codes or text
+
+Make chores less of a chore and more of a celebration. Join the Chore Joy Board community and bring joy back to household tasks!
