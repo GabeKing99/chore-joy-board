@@ -10,6 +10,10 @@
     const IOS_URL = 'https://apps.apple.com/app/idXXXXXXXXXX';
     const ANDROID_URL = 'https://play.google.com/store/apps/details?id=com.example.chorejoy';
   </script>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
+  <meta name="theme-color" content="#334155">
   <script src="https://cdn.jsdelivr.net/npm/qrcode@1.4.4/build/qrcode.min.js"></script>
 </head>
 <body class="bg-gradient-to-b from-sky-50 via-white to-white text-slate-900 antialiased">
@@ -169,5 +173,12 @@
       correctLevel : QRCode.CorrectLevel.H
     });
   </script>
+    <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/chore-joy-board/service-worker.js').catch(console.error);
+    }
+  </script>
+</body>
+</html>
 </body>
 </html>
